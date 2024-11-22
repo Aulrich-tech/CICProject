@@ -12,12 +12,6 @@ body {
     color: #333;
 }
 
-.container {
-    width: 80%;
-    max-width: 1200px;
-    margin: 0 auto; /* Centers content */
-}
-
 header {
     display: flex;
     justify-content: space-between;
@@ -28,6 +22,11 @@ header {
     position: fixed;
     width: 100%;
     z-index: 1000;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 header nav ul {
@@ -76,57 +75,37 @@ h2 {
     margin: 20px 0;
 }
 
-.project-list {
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+
+.gallery-item {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
     display: flex;
     justify-content: center;
-    gap: 30px;
-    margin: 20px 0;
-}
-
-.project {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 45%;
-}
-
-.project h3 {
-    margin-bottom: 10px;
-    font-size: 1.5rem;
-}
-
-.project p {
-    font-size: 1rem;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
 
 section {
     padding: 50px 20px;
+}
+
+footer {
+    background: #000;
+    color: #fff;
     text-align: center;
+    padding: 10px;
 }
-
-ul {
-    list-style-type: none;
-    margin: 20px 0;
-    padding: 0;
-    text-align: left;
-    display: inline-block;
-}
-
-ul li {
-    margin-bottom: 10px;
-    font-size: 1.1rem;
-}
-
-.social-media {
-    margin-top: 10px;
-}
-
-.social-media a {
-    text-decoration: none;
-    color: #000;
-    margin-right: 10px;
-}/* styles.css */
+/* styles.css */
 
 /* Add social media icon styles */
 .social-media {
@@ -146,14 +125,6 @@ ul li {
     color: #ff6347; /* Tomato color on hover */
     transform: scale(1.2); /* Slightly enlarge icon on hover */
 }
-
-footer {
-    background: #000;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-}
-
 
 footer {
     background: #000;
