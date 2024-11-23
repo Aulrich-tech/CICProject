@@ -47,20 +47,17 @@ header nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-    background-image: url('hero-bg.jpg');
-    background-size: cover;
-    background-position: center;
-    padding: 80px 0;
+    background-color: #333;
     color: white;
+    padding: 80px 0;
     text-align: center;
 }
 
-.hero .hero-content h2 {
+.hero h2 {
     font-size: 3rem;
-    margin-bottom: 20px;
 }
 
-.hero .hero-content p {
+.hero p {
     font-size: 1.2rem;
 }
 
@@ -77,51 +74,61 @@ header nav ul li a:hover {
     margin-bottom: 20px;
 }
 
-.info-section .info-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+/* Cards */
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
-.info-section .profile-img {
-    width: 150px;
-    height: 150px;
+.card img {
+    width: 100%;
+    max-width: 200px;
     border-radius: 50%;
-    object-fit: cover;
     margin-right: 20px;
 }
 
-.info-section .info-text ul {
+.card-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.card ul {
     list-style: none;
     padding: 0;
 }
 
-.info-section .info-text ul li {
+.card ul li {
     margin: 5px 0;
 }
 
-/* Gallery Section */
+.card a {
+    color: #333;
+    text-decoration: none;
+}
+
+.card a:hover {
+    color: #ff6347;
+}
+
+/* Gallery */
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 15px;
-}
-
-.gallery-item {
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    gap: 20px;
 }
 
 .gallery-item img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
 }
 
-.gallery-item:hover {
+.gallery-item:hover img {
     transform: scale(1.05);
 }
 
@@ -149,25 +156,4 @@ footer .social-icon:hover {
 
 footer p {
     font-size: 0.9rem;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    header nav ul {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .info-section .info-content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .hero .hero-content h2 {
-        font-size: 2.5rem;
-    }
-
-    .hero .hero-content p {
-        font-size: 1.1rem;
-    }
 }
