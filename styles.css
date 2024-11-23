@@ -22,6 +22,21 @@ body {
     max-width: 1200px;
     margin: 0 auto; /* Centers the content */
 }
+/* Profile Picture Styles */
+.profile-container {
+    display: flex;
+    align-items: center; /* Align text and image vertically */
+    gap: 20px; /* Space between the image and the text */
+}
+
+.profile-img {
+    width: 150px; /* Size of the profile picture */
+    height: 150px; /* Make sure the image is square */
+    border-radius: 50%; /* This will make the image circular */
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+    border: 3px solid #fff; /* Optional: Add a white border around the image */
+}
+
 
 header {
     display: flex;
