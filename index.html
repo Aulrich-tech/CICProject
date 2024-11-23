@@ -8,94 +8,59 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
+    <!-- Music Player -->
+    <div id="music-control">
+        <audio controls id="background-audio" loop>
+            <source src="apt.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
     <header>
         <div class="container">
             <h1 class="logo">Aulrich J. Espiritu</h1>
             <nav>
                 <ul>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
                     <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#gallery">My Gallery</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section class="hero">
-        <div class="container">
-            <h2>Aulrich J. Espiritu</h2>
+    <section class="fullscreen">
+        <div class="overlay">
+            <h1>Aulrich J. Espiritu</h1>
             <p>Information Technology Student & Aspiring Web Developer</p>
         </div>
     </section>
 
-    <section id="about" class="info-section">
+    <section id="about">
         <div class="container">
             <h2>About Me</h2>
-            <div class="info-block">
-                <img src="myorig.jpg" alt="Aulrich J. Espiritu" class="info-img">
-                <div class="info-content">
-                    <h3>Background</h3>
-                    <p>I am an Information Technology student with a background in accountancy, exploring web development and digital innovation.</p>
-                </div>
+            <div class="profile-container">
+                <img src="myorig.jpg" alt="Aulrich J. Espiritu" class="profile-img">
+                <p>I am an Information Technology student with a background in accountancy, exploring web development and digital innovation.</p>
+                <ul>
+                    <li><strong>Skills:</strong> Adaptable, experienced in web development, creating wireframes, and assembling PCs.</li>
+                    <li><strong>Interests:</strong> Learning, playing video games, and playing music (especially guitar).</li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <section id="skills" class="info-section">
-        <div class="container">
-            <h2>Skills</h2>
-            <div class="info-block">
-                <div class="info-icon"><i class="fas fa-code"></i></div>
-                <div class="info-content">
-                    <h3>Web Development</h3>
-                    <p>Experienced in HTML, CSS, and JavaScript.</p>
-                </div>
-            </div>
-            <div class="info-block">
-                <div class="info-icon"><i class="fas fa-cogs"></i></div>
-                <div class="info-content">
-                    <h3>Problem Solving</h3>
-                    <p>Able to identify and solve issues quickly and effectively.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="education" class="info-section">
-        <div class="container">
-            <h2>Education</h2>
-            <div class="info-block">
-                <div class="info-icon"><i class="fas fa-graduation-cap"></i></div>
-                <div class="info-content">
-                    <h3>Bachelor of Science in IT</h3>
-                    <p>University of the East (Ongoing)</p>
-                </div>
-            </div>
-            <div class="info-block">
-                <div class="info-icon"><i class="fas fa-graduation-cap"></i></div>
-                <div class="info-content">
-                    <h3>Bachelor of Science in Accountancy</h3>
-                    <p>Pamantasan ng Lungsod ng Valenzuela</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="info-section">
-        <div class="container">
-            <h2>Contact</h2>
-            <div class="info-block">
-                <div class="info-icon"><i class="fas fa-envelope"></i></div>
-                <div class="info-content">
-                    <h3>Email</h3>
-                    <p><a href="mailto:aulrichespiritu711@gmail.com">aulrichespiritu711@gmail.com</a></p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Achievements, Education, Skills, and Gallery Sections... -->
 
     <footer>
+        <div class="social-media">
+            <a href="https://facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+        </div>
         <p>&copy; 2024 Aulrich J. Espiritu. All Rights Reserved.</p>
     </footer>
 </body>
