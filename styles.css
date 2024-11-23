@@ -137,13 +137,16 @@ h2 {
     text-align: center;
     padding: 10px;
 }
-    /* Generic Section Block Styling */
+/* Generic Section Block Styling */
 section {
     margin: 20px 0;
     padding: 20px;
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    background: rgba(0, 0, 0, 0.5); /* Transparent black */
+    color: #fff; /* White text for readability */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Slight shadow */
+    backdrop-filter: blur(5px); /* Adds a background blur effect */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Adds a soft border */
 }
 
 /* Section Headers Styling */
@@ -152,36 +155,53 @@ section h2 {
     font-size: 1.8rem;
     text-transform: uppercase;
     text-align: center;
-    color: #ff6347; /* Accent color */
+    color: #ffd700; /* Gold accent for headers */
 }
 
 /* Section-specific Backgrounds (Optional) */
 #about {
-    background-image: url('about-bg.jpg'); /* Replace with relevant image path */
-    background-size: cover;
-    background-position: center;
-    color: #fff;
+    background: rgba(25, 25, 112, 0.7); /* Midnight blue */
 }
 
 #achievements {
-    background-color: rgba(255, 223, 186, 0.9); /* Light beige background */
-    color: #333;
+    background: rgba(34, 139, 34, 0.6); /* Forest green */
 }
 
 #education {
-    background-color: rgba(173, 216, 230, 0.9); /* Light blue */
-    color: #000;
+    background: rgba(70, 130, 180, 0.6); /* Steel blue */
 }
 
 #skills {
-    background-color: rgba(240, 255, 240, 0.9); /* Light green */
-    color: #333;
+    background: rgba(139, 69, 19, 0.6); /* Saddle brown */
 }
 
 #contact {
-    background-color: rgba(255, 228, 225, 0.9); /* Light pink */
-    color: #333;
+    background: rgba(128, 0, 0, 0.6); /* Maroon */
 }
+
+/* Adjust Text Styling for Better Readability */
+section ul, section p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Adjust Links */
+a {
+    color: #ffd700; /* Gold links */
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #ffa500; /* Orange on hover */
+}
+
+/* Optional - Add Subtle Animation on Hover for Sections */
+section:hover {
+    transform: translateY(-5px);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6);
+}
+
 
 
 footer {
