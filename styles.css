@@ -169,7 +169,7 @@ footer {
 /* Gallery Section Styling */
 #gallery {
     padding: 50px 20px;
-    background: #f4f4f4; /* Light background color */
+    background: none; /* Light background color */
 }
 
 #gallery h2 {
