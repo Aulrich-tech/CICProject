@@ -270,7 +270,7 @@ footer {
 .gallery-item:hover img {
     transform: scale(1.1); /* Slight zoom on hover */
 }
-audio {
+#music-control {
     width: 100%;
     max-width: 400px;
     border: 2px solid #ffd700; /* Gold border */
@@ -280,46 +280,46 @@ audio {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow */
 }
 
-audio::-webkit-media-controls-panel {
+#music-control::-webkit-media-controls-panel {
     background-color: rgba(0, 0, 0, 0.8); /* Dark background for controls */
     border-radius: 15px;
 }
 
-audio::-webkit-media-controls-play-button,
-audio::-webkit-media-controls-pause-button,
-audio::-webkit-media-controls-timeline,
-audio::-webkit-media-controls-current-time-display,
-audio::-webkit-media-controls-time-remaining-display,
-audio::-webkit-media-controls-volume-slider {
+#music-control::-webkit-media-controls-play-button,
+#music-control::-webkit-media-controls-pause-button,
+#music-control::-webkit-media-controls-timeline,
+#music-control::-webkit-media-controls-current-time-display,
+#music-control::-webkit-media-controls-time-remaining-display,
+#music-control::-webkit-media-controls-volume-slider {
     color: #ffd700; /* Gold-colored controls */
     background: none;
 }
 
-audio::-webkit-media-controls-play-button:hover,
-audio::-webkit-media-controls-pause-button:hover,
-audio::-webkit-media-controls-volume-slider:hover {
+#music-control::-webkit-media-controls-play-button:hover,
+#music-control::-webkit-media-controls-pause-button:hover,
+#music-control::-webkit-media-controls-volume-slider:hover {
     background-color: #333; /* Highlight effect on hover */
     color: #ffa500; /* Orange hover color */
 }
 
-audio::-webkit-media-controls-mute-button,
-audio::-webkit-media-controls-unmute-button {
+#music-control::-webkit-media-controls-mute-button,
+#music-control::-webkit-media-controls-unmute-button {
     color: #ffd700;
 }
 
-audio::-webkit-media-controls-timeline {
+#music-control::-webkit-media-controls-timeline {
     background-color: #555; /* Gray progress bar */
     height: 5px;
     border-radius: 10px;
 }
 
-audio::-webkit-media-controls-timeline::-webkit-media-controls-progress-bar {
+#music-control::-webkit-media-controls-timeline::-webkit-media-controls-progress-bar {
     background-color: #ffd700; /* Gold progress bar */
     height: 5px;
     border-radius: 10px;
 }
 
-audio::-webkit-media-controls-volume-slider-container {
+#music-control::-webkit-media-controls-volume-slider-container {
     background-color: #555; /* Gray volume slider */
     border-radius: 10px;
 }
