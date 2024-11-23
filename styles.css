@@ -137,10 +137,52 @@ h2 {
     text-align: center;
     padding: 10px;
 }
-
+    /* Generic Section Block Styling */
 section {
-    padding: 50px 20px;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
 }
+
+/* Section Headers Styling */
+section h2 {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ff6347; /* Accent color */
+}
+
+/* Section-specific Backgrounds (Optional) */
+#about {
+    background-image: url('about-bg.jpg'); /* Replace with relevant image path */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+#achievements {
+    background-color: rgba(255, 223, 186, 0.9); /* Light beige background */
+    color: #333;
+}
+
+#education {
+    background-color: rgba(173, 216, 230, 0.9); /* Light blue */
+    color: #000;
+}
+
+#skills {
+    background-color: rgba(240, 255, 240, 0.9); /* Light green */
+    color: #333;
+}
+
+#contact {
+    background-color: rgba(255, 228, 225, 0.9); /* Light pink */
+    color: #333;
+}
+
 
 footer {
     background: #000;
