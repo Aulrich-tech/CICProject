@@ -4,17 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aulrich Espiritu - Portfolio</title>
-    <!-- Link to external CSS file -->
     <link rel="stylesheet" href="styles.css">
-    <!-- Add Font Awesome for social media icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <!-- audio background -->
-    <audio autoplay loop>
-        <source src="apt.mp3" type="audio/mpeg">
-    </audio>
-
     <header>
         <div class="container">
             <h1 class="logo">Aulrich J. Espiritu</h1>
@@ -23,38 +16,40 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#achievements">Achievements</a></li>
                     <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#gallery">My Gallery</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Fullscreen Section (Hero Image) -->
-    <section class="fullscreen">
-        <div class="overlay">
-            <h1>Aulrich J. Espiritu</h1>
-            <p>Information Technology Student & Aspiring Web Developer</p>
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Aulrich J. Espiritu</h2>
+                <p>Information Technology Student & Aspiring Web Developer</p>
+            </div>
         </div>
     </section>
 
-    <!-- About Section -->
-<section id="about">
-    <div class="container">
-        <h2>About Me</h2>
-        <div class="profile-container">
-            <img src="myorig.jpg" alt="Aulrich J. Espiritu" class="profile-img"> <!-- Profile picture -->
-            <p>I am an Information Technology student with a background in accountancy, exploring web development and digital innovation.</p>
-            <ul>
-                <li><strong>Skills:</strong> Adaptable, experienced in web development, creating wireframes, and assembling PCs.</li>
-                <li><strong>Interests:</strong> Learning, playing video games, and playing music (especially guitar).</li>
-            </ul>
+    <section id="about" class="info-section">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="info-content">
+                <img src="myorig.jpg" alt="Aulrich J. Espiritu" class="profile-img">
+                <div class="info-text">
+                    <p>I am an Information Technology student with a background in accountancy, exploring web development and digital innovation.</p>
+                    <ul>
+                        <li><strong>Skills:</strong> Adaptable, experienced in web development, creating wireframes, and assembling PCs.</li>
+                        <li><strong>Interests:</strong> Learning, playing video games, and playing music (especially guitar).</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-
-    <!-- Achievements Section -->
-    <section id="achievements">
+    <section id="achievements" class="info-section">
         <div class="container">
             <h2>Achievements</h2>
             <ul>
@@ -65,8 +60,7 @@
         </div>
     </section>
 
-    <!-- Education Section -->
-    <section id="education">
+    <section id="education" class="info-section">
         <div class="container">
             <h2>Education</h2>
             <ul>
@@ -77,8 +71,7 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills">
+    <section id="skills" class="info-section">
         <div class="container">
             <h2>Skills</h2>
             <ul>
@@ -87,35 +80,31 @@
                 <li><strong>Problem-Solving:</strong> Able to provide solutions to different challenges</li>
                 <li><strong>Tools:</strong> Git, GitHub, Visual Studio Code</li>
                 <li><strong>Flexibility:</strong> Able to adapt to various environments or circumstances</li>
-                <li><strong>Communication</strong> - Fluent in English and Tagalog, able to understand Japanese and Korean.</li>
-                <li><strong>Electrical Wiring</strong> - Have basic knowledge in wiring electricity.</li>
-                <li><strong>Dancing and Singing</strong> - Capable of singing and dancing.</li>
+                <li><strong>Communication:</strong> Fluent in English and Tagalog, able to understand Japanese and Korean.</li>
+                <li><strong>Electrical Wiring:</strong> Have basic knowledge in wiring electricity.</li>
+                <li><strong>Dancing and Singing:</strong> Capable of singing and dancing.</li>
             </ul>
         </div>
     </section>
 
-    <!-- Gallery Section -->
-<section id="gallery">
-    <div class="container">
-        <h2>My Gallery</h2>
-        <div class="gallery">
-            <div class="gallery-item">
-                <img src="wiring.jpg" alt="Image 1">
+    <section id="gallery" class="info-section">
+        <div class="container">
+            <h2>My Gallery</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="wiring.jpg" alt="Image 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="dancer.jpg" alt="Image 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="fam.jpg" alt="Image 3">
+                </div>
             </div>
-            <div class="gallery-item">
-                <img src="dancer.jpg" alt="Image 2">
-            </div>
-            <div class="gallery-item">
-                <img src="fam.jpg" alt="Image 3">
-            </div>
-            <!-- Add more images as needed -->
         </div>
-    </div>
-</section>
+    </section>
 
-
-    <!-- Contact Section -->
-    <section id="contact">
+    <section id="contact" class="info-section">
         <div class="container">
             <h2>Contact</h2>
             <p>Email: <a href="mailto:aulrichespiritu711@gmail.com">aulrichespiritu711@gmail.com</a></p>
@@ -123,14 +112,11 @@
         </div>
     </section>
 
-    <!-- Footer with Social Media Links -->
     <footer>
         <div class="social-media">
-            <!-- Social Media Links -->
-            <a href="https://www.facebook.com/share/17pvsQFfCT/" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com/aulrich_espiritu/profilecard/?igsh=MWJ1M3pvdnU2MzB4Yg==" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.snapchat.com/add/zeb71103?share_id=4lOEP1JFfPI&locale=en-PH" target="_blank" class="social-icon"><i class="fab fa-snapchat"></i></a>
-            <a href="https://github.com/Aulrich-tech" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+            <a href="https://www.facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
         </div>
         <p>&copy; 2024 Aulrich J. Espiritu. All Rights Reserved.</p>
     </footer>
