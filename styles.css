@@ -271,7 +271,7 @@ footer {
     transform: scale(1.1); /* Slight zoom on hover */
 }
 /* General Styling for the Audio Element */
-#custom-audio {
+audio#custom-audio {
     width: 100%; /* Full width for responsiveness */
     max-width: 400px; /* Limit the maximum width */
     border: 2px solid #ffd700; /* Gold border */
@@ -282,44 +282,44 @@ footer {
 }
 
 /* Styling for WebKit-Based Browsers (Chrome, Safari, Edge) */
-#custom-audio::-webkit-media-controls-panel {
+audio#custom-audio::-webkit-media-controls-panel {
     background-color: rgba(0, 0, 0, 0.8); /* Dark background for controls */
     border-radius: 15px; /* Match audio border */
 }
 
-#custom-audio::-webkit-media-controls-play-button,
-#custom-audio::-webkit-media-controls-pause-button,
-#custom-audio::-webkit-media-controls-timeline,
-#custom-audio::-webkit-media-controls-current-time-display,
-#custom-audio::-webkit-media-controls-time-remaining-display,
-#custom-audio::-webkit-media-controls-volume-slider {
+audio#custom-audio::-webkit-media-controls-play-button,
+audio#custom-audio::-webkit-media-controls-pause-button,
+audio#custom-audio::-webkit-media-controls-timeline,
+audio#custom-audio::-webkit-media-controls-current-time-display,
+audio#custom-audio::-webkit-media-controls-time-remaining-display,
+audio#custom-audio::-webkit-media-controls-volume-slider {
     color: #ffd700; /* Gold-colored controls */
     background: none; /* Transparent background */
 }
 
 /* Hover Effects for Buttons */
-#custom-audio::-webkit-media-controls-play-button:hover,
-#custom-audio::-webkit-media-controls-pause-button:hover,
-#custom-audio::-webkit-media-controls-volume-slider:hover {
+audio#custom-audio::-webkit-media-controls-play-button:hover,
+audio#custom-audio::-webkit-media-controls-pause-button:hover,
+audio#custom-audio::-webkit-media-controls-volume-slider:hover {
     background-color: #333; /* Highlight effect on hover */
     color: #ffa500; /* Orange hover color */
 }
 
 /* Progress Bar Styling */
-#custom-audio::-webkit-media-controls-timeline {
+audio#custom-audio::-webkit-media-controls-timeline {
     background-color: #555; /* Gray progress bar */
     height: 5px; /* Adjust bar height */
     border-radius: 10px;
 }
 
-#custom-audio::-webkit-media-controls-timeline::-webkit-media-controls-progress-bar {
+audio#custom-audio::-webkit-media-controls-timeline::-webkit-media-controls-progress-bar {
     background-color: #ffd700; /* Gold progress bar */
     height: 5px;
     border-radius: 10px;
 }
 
 /* Volume Slider Styling */
-#custom-audio::-webkit-media-controls-volume-slider-container {
+audio#custom-audio::-webkit-media-controls-volume-slider-container {
     background-color: #555; /* Gray volume slider */
     border-radius: 10px;
 }
