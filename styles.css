@@ -220,6 +220,9 @@ footer {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a subtle shadow */
   display: flex;
 }
+.carousel-inner {
+  text-align: center; /* Center images inside the carousel */
+}
 
 .gallery-item img{
     width: 100%;
