@@ -81,6 +81,7 @@ header nav ul li a:hover {
     background: url('bgbg.jpg') no-repeat center center/cover; /* Specific hero background */
     position: relative;
     display: flex;
+    flex-direction: column; /* Stack content vertically */
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -158,27 +159,6 @@ section h2 {
     color: #ffd700; /* Gold accent for headers */
 }
 
-/* Section-specific Backgrounds (Optional) */
-#about {
-    background: rgba(25, 25, 112, 0.7); /* Midnight blue */
-}
-
-#achievements {
-    background: rgba(34, 139, 34, 0.6); /* Forest green */
-}
-
-#education {
-    background: rgba(70, 130, 180, 0.6); /* Steel blue */
-}
-
-#skills {
-    background: rgba(139, 69, 19, 0.6); /* Saddle brown */
-}
-
-#contact {
-    background: rgba(128, 0, 0, 0.6); /* Maroon */
-}
-
 /* Adjust Text Styling for Better Readability */
 section ul, section p {
     font-size: 1rem;
@@ -231,14 +211,18 @@ footer {
 /* Gallery Section Styling */
 #gallery {
     padding: 50px 20px;
-    background: none; /* Light background color */
+    background: rgba(0, 0, 0, 0.5); /* Transparent black */
+    color: #fff; /* White text for readability */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Slight shadow */
+    backdrop-filter: blur(5px); /* Adds a background blur effect */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Adds a soft border */
 }
 
 #gallery h2 {
     text-align: center;
     margin-bottom: 30px;
-    font-size: 2rem;
-    color: #fff;
+    font-size: 1.8rem;
+    color: #ffd700;
 }
 
 .gallery {
@@ -270,61 +254,59 @@ footer {
 .gallery-item:hover img {
     transform: scale(1.1); /* Slight zoom on hover */
 }
-/* General Styling for the Audio Element */
-audio#custom-audio {
-    width: 100%; /* Full width for responsiveness */
-    max-width: 400px; /* Limit the maximum width */
-    border: 2px solid #ffd700; /* Gold border */
-    border-radius: 15px; /* Rounded corners */
-    background-color: rgba(0, 0, 0, 0.8); /* Dark background */
+/* Style the music control button */
+#music-control {
+    position: fixed;
+    bottom: 20px; /* Adjust the bottom position */
+    right: 20px;  /* Adjust the right position */
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background with some transparency */
+    border-radius: 50%;
     padding: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    z-index: 9999; /* Ensure it's above other elements */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
 }
 
-/* Styling for WebKit-Based Browsers (Chrome, Safari, Edge) */
-audio#custom-audio::-webkit-media-controls-panel {
-    background-color: rgba(0, 0, 0, 0.8); /* Dark background for controls */
-    border-radius: 15px; /* Match audio border */
+/* Hover effect for the music control button */
+#music-control:hover {
+    background-color: rgba(0, 0, 0, 1); /* Darken when hovered */
 }
 
-audio#custom-audio::-webkit-media-controls-play-button,
-audio#custom-audio::-webkit-media-controls-pause-button,
-audio#custom-audio::-webkit-media-controls-timeline,
-audio#custom-audio::-webkit-media-controls-current-time-display,
-audio#custom-audio::-webkit-media-controls-time-remaining-display,
-audio#custom-audio::-webkit-media-controls-volume-slider {
-    color: #ffd700; /* Gold-colored controls */
-    background: none; /* Transparent background */
+/* Style the audio player */
+#audio-player {
+    width: 120px; /* Slightly wider player */
+    background-color: rgba(0, 0, 0, 0.5); /* Remove background */
+    border: none; /* Remove default border */
+    color: rgba(0, 0, 0, 0.5); /* White controls */
 }
 
-/* Hover Effects for Buttons */
-audio#custom-audio::-webkit-media-controls-play-button:hover,
-audio#custom-audio::-webkit-media-controls-pause-button:hover,
-audio#custom-audio::-webkit-media-controls-volume-slider:hover {
-    background-color: #333; /* Highlight effect on hover */
-    color: #ffa500; /* Orange hover color */
+/* Style the audio control buttons (Play, Pause, Volume, etc.) */
+#audio-player::-webkit-media-controls-panel {
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background for the controls */
+    border-radius: 10px; /* Rounded corners for the player */
 }
 
-/* Progress Bar Styling */
-audio#custom-audio::-webkit-media-controls-timeline {
-    background-color: #555; /* Gray progress bar */
-    height: 5px; /* Adjust bar height */
-    border-radius: 10px;
+#audio-player::-webkit-media-controls-play-button {
+    background-color: #ff6347; /* Tomato color for the play button */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    transition: background-color 0.3s ease;
 }
 
-audio#custom-audio::-webkit-media-controls-timeline::-webkit-media-controls-progress-bar {
-    background-color: #ffd700; /* Gold progress bar */
-    height: 5px;
-    border-radius: 10px;
+#audio-player::-webkit-media-controls-play-button:hover {
+    background-color: #ff4500; /* Darker red when hovered */
 }
 
-/* Volume Slider Styling */
-audio#custom-audio::-webkit-media-controls-volume-slider-container {
-    background-color: #555; /* Gray volume slider */
-    border-radius: 10px;
+/* Style the volume control */
+#audio-player::-webkit-media-controls-volume-slider {
+    background-color: #ccc; /* Lighter volume slider */
 }
 
-
+/* Style the progress bar */
+#audio-player::-webkit-media-controls-progress-bar {
+    background-color: #ff6347; /* Tomato progress bar */
+}
 /* Media Queries for Mobile Devices */
 @media (max-width: 768px) {
     /* Stack navigation items vertically on small screens */
@@ -395,4 +377,24 @@ audio#custom-audio::-webkit-media-controls-volume-slider-container {
     #about ul li, #achievements ul li, #education ul li, #skills ul li {
         font-size: 0.9rem;
     }
+}
+.link-container {
+    margin-top: 10px; /* Add some space between the overlay and button */
+    z-index: 1;
+}
+
+.btn {
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.5); /* Button background color */
+    color: #fff; /* Text color */
+    padding: 10px 20px; /* Padding for the button */
+    text-decoration: none; /* Remove underline from the link */
+    font-weight: bold;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.btn:hover {
+    background: white; /* Slightly darker cyan on hover */
+    color: red; /* Change text color on hover */
 }
