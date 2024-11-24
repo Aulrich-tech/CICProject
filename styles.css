@@ -213,7 +213,7 @@ footer {
 }
 
 .gallery-item {
-    height: 100px; /* Reduced height */
+    height: 200px; /* Reduced height */
     width: 100%; /* Ensure full width within grid column */
     border-radius: 5px;
     display: flex;
@@ -221,7 +221,7 @@ footer {
     align-items: center;
     color: white;
     text-align: center;
-    padding: 5px; /* Adjusted padding */
+    padding: 10px; /* Adjusted padding */
     overflow: hidden; /* Ensure no content overflow */
 }
 
