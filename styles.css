@@ -261,7 +261,7 @@ footer {
 
 .gallery-item {
   max-height: 400px; /* Set a max height for the images */
-  object-fit: cover; /* Ensures the images are cropped properly to fill the space */
+  object-fit: contain; /* Ensures the images are cropped properly to fill the space */
   width: 100%; /* Ensure the images fill their container's width */
   border-radius: 10px; /* Optional: Add rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a subtle shadow */
@@ -274,7 +274,7 @@ footer {
 .gallery-item img{
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensure the images scale proportionally */
+    object-fit: contain; /* Ensure the images scale proportionally */
     border-radius: 5px;
 }
 
