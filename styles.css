@@ -390,7 +390,7 @@ footer {
     color: white;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
 }
-#education .accordion-item {
+#education .accordion {
     border: none;
     background-color: rgba(0, 0, 0, 0.2);
     color: white;
