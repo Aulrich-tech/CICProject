@@ -10,11 +10,13 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #fff;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b, #86a8e7, #91eae4); /* A colorful gradient */
     background-image: url('background.jpg'); /* Default background for all other sections */
-    background-size: cover;
+    background-size: 300% 300%;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    animation: gradient 10s ease infinite; /* Apply the gradient animation */
 }
 
 
