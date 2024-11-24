@@ -44,7 +44,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background: #000;
+    background: black;
     color: #fff;
     position: fixed;
     top: 0;
@@ -165,7 +165,7 @@ section:hover {
 
 
 footer {
-    background: #000;
+    background: black;
     color: #fff;
     text-align: center;
     padding: 10px;
