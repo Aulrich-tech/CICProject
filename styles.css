@@ -127,7 +127,8 @@ h2 {
 }
 
 .gallery-item {
-    height: 200px;
+    height: 150px;
+    width: auto;
     background-size: cover;
     background-position: center;
     border-radius: 5px;
@@ -136,7 +137,7 @@ h2 {
     align-items: center;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 5px;
 }
 /* Generic Section Block Styling */
 section {
@@ -228,7 +229,7 @@ footer {
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+    gap: 15px;
 }
 
 .gallery-item {
@@ -244,6 +245,7 @@ footer {
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
+    border-radius: 5px;
 }
 
 .gallery-item:hover {
