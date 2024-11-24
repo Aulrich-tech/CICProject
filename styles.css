@@ -15,6 +15,30 @@ body {
     animation: gradient-animation 10s ease infinite; /* Smooth infinite animation */
     margin: 0;
 }
+.video-background {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-background video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1; /* Ensures the video is behind the content */
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
+}
 
 
 .container {
@@ -387,16 +411,4 @@ footer {
     background-color: rgba(0, 0, 0, 0.4);
     color: white;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-}
-    
-@keyframes gradient{
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 0% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
 }
