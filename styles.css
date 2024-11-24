@@ -225,7 +225,7 @@ footer {
     overflow: hidden; /* Ensure no content overflow */
 }
 
-.gallery-item img {
+.gallery-item {
     width: 100%;
     height: 100%;
     object-fit: cover; /* Ensure the images scale proportionally */
