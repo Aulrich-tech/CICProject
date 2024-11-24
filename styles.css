@@ -370,14 +370,12 @@ footer {
 }
 
 .btn {
-    display: inline-block;
-    background: rgba(0, 0, 0, 0.5); /* Button background color */
-    color: #fff; /* Text color */
-    padding: 10px 20px; /* Padding for the button */
-    text-decoration: none; /* Remove underline from the link */
-    font-weight: bold;
-    border-radius: 5px; /* Rounded corners */
-    transition: background-color 0.3s ease; /* Smooth hover effect */
+    -webkit-box-reflect: below 1px linear-gradient(
+        transparent, #0005);
+    box-shadow: 0 0 5px #000,
+        0 0 15px #000,
+        0 0 0 25px #000,
+        0 0 0 100px #000;
 }
 
 .btn:hover {
