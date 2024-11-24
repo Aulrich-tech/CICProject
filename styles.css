@@ -385,8 +385,14 @@ footer {
     color: red; /* Change text color on hover */
 }
 #achievements .card {
-        border: none; /* Remove card border */
-        background-color: rgba(0, 0, 0, 0.4);
-        color: white;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-    }
+    border: none; /* Remove card border */
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+#education .accordion-item {
+    border: none;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
