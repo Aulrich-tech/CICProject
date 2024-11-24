@@ -63,14 +63,14 @@ header nav ul {
     gap: 15px;
 }
 
-header nav ul li a {
+header nav item {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
     padding: 5px 10px;
 }
 
-header nav ul li a:hover {
+header nav item:hover {
     background: white;
     text-color: black;
     border-radius: 5px;
