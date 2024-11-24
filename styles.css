@@ -16,9 +16,12 @@ body {
     margin: 0;
 }
 .video-background {
-    position: relative;
+    position: fixed; /* Fix the video to the screen */
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    z-index: -1; /* Keeps the video in the background */
     overflow: hidden;
 }
 
@@ -26,12 +29,21 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
+    transform: translate(-50%, -50%);
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    transform: translate(-50%, -50%);
-    z-index: -1; /* Ensures the video is behind the content */
+    object-fit: cover; /* Ensures the video fills the screen without distortion */
 }
+.video-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark semi-transparent overlay */
+    z-index: 0; /* Ensure overlay is below content */
+}
+
 #bg-video {
     position: absolute;
     top: 50%;
